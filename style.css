@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lora&family=Mukta:wght@200&family=Quicksand&family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Lora&family=Mukta:wght@200&family=Raleway:ital,wght@1,300&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+
+    position: sticky;
+    top: 0;
+    /* justify-content: center; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#logo {
+    margin: 11px 35px;
+}
+
+#logo img {
+    height: 67px;
+    margin: 2px 4px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    font-family: 'Ubuntu', sans-serif;
+
+    /* background-color: black; */
+    list-style: none;
+}
+
+
+#navbar ul li a {
+
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    color: black;
+    padding: 3px 22px;
+    border-radius: 20px;
+
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: gray;
+}
+
+#home {
+    display: flex;
+    height: 550px;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1 {
+    text-align: center;
+    color: black;
+    font-size: 2.7rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#home::before {
+    content: "";
+    background: url('bg_pizza.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+
+}
+
+.head-para {
+    font-size: 1.35rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 650;
+
+}
+
+#services .box p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 550;
+
+
+}
+
+
+.h-primary {
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.h-secondary {
+    font-size: 1.9rem;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+.btn {
+    padding: 6px 20px;
+    background-color: brown;
+    border: 2px solid white;
+    color: whitesmoke;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+
+
+.center {
+
+    text-align: center;
+}
+
+/* services
+ 
+*/
+#services {
+    display: flex;
+    margin: 30px;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 24px 6px;
+    border-radius: 23px;
+    background: rgb(243, 232, 232);
+    margin-bottom: 20px;
+
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#client-section {
+    height: 500px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background-image: url('bg1.png');
+    width: 100%;
+    height: 82%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 120px;
+}
+
+/* contact */
+#contact {
+    position: relative;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    border-radius: 9px;
+    font-size: 1.0rem;
+    padding: 0.5rem;
+
+}
+
+.btn1 {
+ 
+    padding: 6px 20px;
+    background-color: black;
+    border: 3px solid gray;
+    color: whitesmoke;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 9px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
